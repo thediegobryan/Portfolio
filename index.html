@@ -18,152 +18,50 @@
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <a class="active" href="#introduction">Home</a>
-        <a href="#aboutMe">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#resume">Resume</a>
-        <a href="#contactMe">Contact Me</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-      </div>
-    <div id="introduction" class="typewriter">
-        <h2 class = "text-center">Hello, my name is</h2><br>
-        <h1 class="text-center">Diego Bryan</h1>
+    <div class="homepage">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link activ link-dark" aria-current="page" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <Header id="header" class="typewriter">
+            <div class="title-two">
+                    <h4 class="emoji-wave"> 👋  </h4>
+                    <h4>    Hello, my name is</h4>
+            </div>
+            <h1 class="text-center title-one">DIEGO BRYAN</h1>
+        </Header>
     </div>
-    <div class = "container text-center">
-        <!--About Me Section-->
-        <div id="aboutMe">
-            <h2>About Me</h2>
-            <p> I am a self-taught programmer transitioning from a career in structural engineering. 
-                I hope to use my background in engineering and creative ideas to solve problems that our communities face. 
-                I strive to be an adaptive team member who fulfills both individual and collective goals. As a lifelong learner, 
-                I am eager to tackle new challenges and continue to pursue growth. Some of my other interests include photography, chess, and weight lifting.</p>
-        </div>
-        <hr>
-        <!--Skill Section-->
-        <div id="skills">
-            <h2>Skills</h2>
-            <div class="row">
-                <div class="col">
-                    <h5><u>Front-End</u></h5>
-                    <ul class="text-left" style="display:inline-block;">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Boostrap</li>
-                        <li>Sass</li>
-                        <li>React</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h5><u>Back-End</u></h5>
-                    <ul class="text-left" style="display:inline-block;">
-                        <li>Node.js</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <!--Portfolio Seciton-->
-        <div id="portfolio">
-            <h2>Portfolio</h2>
-            <h5>Calculator</h5>
-            <div class="row">
-                <div class = "col-md-6">
-                    <a href="https://thediegobryan.github.io/FCC_Calculator/" target="_blank" class="project-tile text-center">
-                        <img class="projectImage" src="./media/Calculator.png"/>
-                        <p class="projectTitle">Visit Site</p>
-                    </a>
-                    <a href="https://github.com/thediegobryan/FCC_Calculator" target="_blank" class="project-tile text-center">
-                        <p class="projectTitle">See Code</p>
-                    </a>
-                </div>
-                <div class = "col-md-6 text-start">
-                    <p>The calculator project is a final project in the Front-End Development Libraries curriculum offered by Free Code Camp.
-                         This project incorporates calculator logic written in JavaScript and a clean UI that can be engaged using a mouse or keyboard. </p>
-                </div>
-            </div>
-            <h5>Exercise Tracker</h5>
-            <div class="row">
-                <div class = "col-md-6">
-                    <a href="https://boilerplate-project-exercisetracker-1.thediegobryan.repl.co/" target="_blank" class="project-tile">
-                        <img class="projectImage" src="./media/Exercise.png"/>
-                        <p class="projectTitle">Visit Site</p>
-                    </a>
-                    
-                    <a href="https://github.com/thediegobryan/FCC_Excercisse_Tracker" target="_blank" class="project-tile">
-                        <p class="projectTitle">See Code</p>
-                    </a>
-                    
-                </div>
-                <div class = "col-md-6 text-start">
-                    <p>The Exercise Tracker project is a final project in the Back-End Development and APIs curriculum offered by Free Code Camp.
-                        It allows users to return to the site and update their fitness log with a user ID. This project utilizes database skills developed
-                         in Mongodb as well as back-end development skills in Node.js</p>
-                </div>
-            </div>
-            <h5>Pomodoro Timer</h5>
-            <div class="row">
-                <div class = "col-md-6">
-                    <a href="https://thediegobryan.github.io/FCC_Pomodoro_Clock/" target="_blank" class="project-tile">
-                        <img class="projectImage" src="./media/Pomodoro.png"/>
-                        <p class="projectTitle">Visit Site</p>
-                    </a>
-                    
-                    <a href="https://github.com/thediegobryan/FCC_Pomodoro_Clock" target="_blank" class="project-tile">
-                        <p class="projectTitle">See Code</p>
-                    </a>
-                    
-                </div>
-                <div class = "col-md-6 text-start">
-                    <p>The Pomodoro Timer project is a final project in the Front-End Development Libraries curriculum offered by Free Code Camp. 
-                        While simplistic in scope, this project covers a robust timer that handles various start/stop/reset conditional logic 
-                        that is not immediately obvious when designing.</p>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <!--Resume Section-->
-        <div id="resume">
-            <h2>Resume</h2>
-            <iframe src="./media/Diego_Bryan_Resume.pdf" width="100%" height="500px">
-            </iframe>
-            <p class="mobilePDF">Click<a href="./media/Diego_Bryan_Resume.pdf">here</a> to open pdf resume.</p>
-        
-        </div>
-        <hr>
-        <!--Contact Me Section-->
-        <div id="contactMe" class="text-start">
-            <h2>Contact Me</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4><i class="bi bi-envelope-fill"></i>  Email:</h4>
-                    <p>diegobryanre@gmail.com</p>
-                    <h4><i class="bi bi-geo-fill"></i>  Location:</h4>
-                    <p>Raleigh, NC</p>
-                </div>
-                <div class="col-md-6">
-                    <h4 class="text-start">Social</h4>
-                    <div class="row">
-                        <a href="https://www.linkedin.com/in/diego-bryan/" target="_blank" class="col-1">
-                            <h3><i class="bi bi-linkedin"></i></h3>
-                        </a>
-                        <a href="https://github.com/thediegobryan" target="_blank" class="col-1">
-                            <h3><i class="bi bi-github"></i></h3>
-                        </a>
-                        <a href="https://www.freecodecamp.org/thediegobryan" target="_blank" class="col-1">
-                            <h3><i class="fab fa-free-code-camp"></i></h3>
-                        </a>
-                    </div>
-                </div>
+    <div class="container" id="about-me">
+        <div class="row">
+            <div class="col-6 about-me-container">
+                <h2 class="about-me-title">ABOUT ME</h2>
+                <p class="about-me-text">I am software developer that is passionate about solving problems with technical analysis, creativity, and team-driven development. As a former structural engineer, I have experience in an agile team environment with a proven ability to anticipate and exceed business needs. Some of my other interests include photography, chess, and cooking</p>
             </div>
         </div>
     </div>
+    <div class="container" id="skills">
+        <div class="row">
+                <h2 class="skills-title">TECHNICAL SKILLS</h2>
+                <div class="col-3 ide-container">
+                    <h4>IDEs</h4>
+                </div>
+            
+        </div>
+    </div>
+
     
 </body>
 </html>
