@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--Boostrap Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <!--Boostrap Icons-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="./style.css">
     <!--Javascript-->
-    <script src="./main.js"></script>
+    <script src="./main.js" defer></script>
     <title>Diego Bryan</title>
 </head>
 
@@ -25,10 +24,10 @@
                     <a class="nav-link activ link-dark" aria-current="page" href="#about-me">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">Portfolio</a>
+                    <a class="nav-link link-dark" href="#technical_skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">Skills</a>
+                    <a class="nav-link link-dark" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-dark">Contact Me</a>
@@ -47,50 +46,150 @@
     <div class="container" id="about-me">
         <div class="row">
             <div class="col-6 about-me-container">
-                <h2 class="about-me-title">ABOUT ME</h2>
+                <h2 class="section-title">About me</h2>
                 <p class="about-me-text">I am software developer that is passionate about solving problems with technical analysis, creativity, and team-driven development. As a former structural engineer, I have experience in an agile team environment with a proven ability to anticipate and exceed business needs. Some of my other interests include photography, chess, and cooking</p>
             </div>
         </div>
     </div>
+
     <div class="container" id="skills">
+        <h2 class="section-title" id="technical_skills">Technical Skills</h2>
         <div class="row">
-            <h2 class="skills-title">TECHNICAL SKILLS</h2>
-            <div class="row">
-                <div class="col-3 ide-container">
-                    <h4>IDEs</h4>
-                </div>
-                <div class="col-9 skill-logos-container">
-                    <img class="skill-logo" src="./media/Logos/768px-Repl.it_logo.png">
-                    <img class="skill-logo" src="./media/Logos/code_pen.png">
-                    <img class="skill-logo" src="./media/Logos/PyCharm_Icon.svg.png">
-                    <img class="skill-logo" src="./media/Logos/Visual_Studio_Code.svg.png">
+            <div class="col-7">
+                <div class="container" id="skillsCloudIcons">
+                    <div class="row">
+                        <div class="col skill-logos-container d-flex justify-content-center">
+                            <a id="nodejs" data-bs-toggle="tooltip" data-bs-title="Node.js" href="https://en.wikipedia.org/wiki/HTML" target="_blank">    
+                                <img class="skill-logo framework" src="./media/Logos/Nodejs.png">
+                            </a>
+                            <a id="pycharm" data-bs-toggle="tooltip" data-bs-title="Pycharm" href="https://en.wikipedia.org/wiki/HTML" target="_blank">    
+                                <img class="skill-logo ide" src="./media/Logos/PyCharm_Icon.svg.png">
+                            </a>
+                            <a id="vscode" data-bs-toggle="tooltip" data-bs-title="Visual Studio Code" href="https://en.wikipedia.org/wiki/HTML" target="_blank">    
+                                <img class="skill-logo ide" src="./media/Logos/Visual_Studio_Code.svg.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col skill-logos-container d-flex justify-content-center">
+                            <a id="matlab" data-bs-toggle="tooltip" data-bs-title="Matlab" href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+                                <img class="skill-logo language" src="./media/Logos/Matlab_Logo.png">
+                            </a>
+                            <a id="javascript" data-bs-toggle="tooltip" data-bs-title="JavaScript" href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+                                <img class="skill-logo language" src="./media/Logos/JavaScript-logo.png">
+                            </a>
+                            <a id="react" data-bs-toggle="tooltip" data-bs-title="React" href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+                                <img class="skill-logo framework" src="./media/Logos/React-icon.png">
+                            </a>
+                            <a id="python" data-bs-toggle="tooltip" data-bs-title="Python" href="https://en.wikipedia.org/wiki/HTML" target="_blank"> 
+                                <img class="skill-logo language" src="./media/Logos/Python-logo-notext.png">
+                            </a>
+                            <a id="codepen" data-bs-toggle="tooltip" data-bs-title="Code Pen" href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+                                <img class="skill-logo ide" src="./media/Logos/code_pen.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col skill-logos-container d-flex justify-content-center">
+                            <a id="css" data-bs-toggle="tooltip" data-bs-title="CSS" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">
+                                <img class="skill-logo language" src="./media/Logos/CSS3.png">
+                            </a>
+                            <a id="boostrap" data-bs-toggle="tooltip" data-bs-title="Boostrap" href="https://getbootstrap.com/" target="_blank">
+                                <img class="skill-logo framework" src="./media/Logos/Bootstrap_logo.png">
+                            </a>
+                            <a id="django" data-bs-toggle="tooltip" data-bs-title="Django" href="https://www.djangoproject.com/" target="_blank">
+                                <img class="skill-logo framework" src="./media/Logos/django.svg">
+                            </a>
+                            <a id="replit" data-bs-toggle="tooltip" data-bs-title="Replit" href="https://replit.com/" target="_blank">
+                                <img class="skill-logo ide" src="./media/Logos/768px-Repl.it_logo.png">
+                            </a>
+                            <a id="html" data-bs-toggle="tooltip" data-bs-title="HTML" href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+                                <img class="skill-logo language" src="./media/Logos/html5.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col skill-logos-container d-flex justify-content-center">
+                            <a id="graphql" data-bs-toggle="tooltip" data-bs-title="GraphQL" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">
+                                <img class="skill-logo database" src="./media/Logos/2048px-GraphQL_Logo.png">
+                            </a>
+                            <a id="awslamda" data-bs-toggle="tooltip" data-bs-title="AWS Lambda" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">
+                                <img class="skill-logo microservice" src="./media/Logos/aws-lambda-1.svg">
+                            </a>
+                            <a id="awsrds" data-bs-toggle="tooltip" data-bs-title="AWS RDS" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">
+                                <img class="skill-logo database" src="./media/Logos/aws-rds-icon-1817x2048-npv8h8zj.png">
+                            </a>
+                            <a id="openai" data-bs-toggle="tooltip" data-bs-title="OpenAI APIs" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">
+                                <img class="skill-logo database" src="./media/Logos/ChatGPT_logo.png">
+                            </a>
+                            <a id="flask" data-bs-toggle="tooltip" data-bs-title="Flask" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">
+                                <img class="skill-logo framework" src="./media/Logos/flask.png">
+                            </a>
+                            <a id="github" data-bs-toggle="tooltip" data-bs-title="Github" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">
+                                <img class="skill-logo microservice" src="./media/Logos/GitHub_Invertocat_Logo.svg">
+                            </a>
+                            <a id="mongodb" data-bs-toggle="tooltip" data-bs-title="MongoDB" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">
+                                <img class="skill-logo database" src="./media/Logos/mongodb-icon-1.svg">
+                            </a>
+                            <a id="postgresql" data-bs-toggle="tooltip" data-bs-title="Postgresql" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">
+                                <img class="skill-logo database" src="./media/Logos/Postgresql_elephant.svg">
+                            </a>
+                            <a id="liquid" data-bs-toggle="tooltip" data-bs-title="Liquid" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">
+                                <img class="skill-logo language" src="./media/Logos/liquid-logo-text.png">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-3 ide-container">
-                    <h4>Languages</h4>
+            <div class="col-5">
+                <div class="container" id="skillsCloudCategories">
+                    <div class="container" id="skillsCloudIcons">
+                    <div class="row">
+                        <div class="col">
+                            <div class="list-group skills-list">
+                                <button onclick="setActive(this, 'skill-logo')" type="button" class="list-group-item list-group-item-action active" aria-current="true">All Skills</button>
+                                <button onclick="setActive(this,'language')" type="button" class="list-group-item list-group-item-action">Languages</button>
+                                <button onclick="setActive(this,'framework')" type="button" class="list-group-item list-group-item-action">Frameworks</button>
+                                <button onclick="setActive(this, 'ide')" type="button" class="list-group-item list-group-item-action">IDEs</button>
+                                <button onclick="setActive(this,'database')" type="button" class="list-group-item list-group-item-action">Databases and APIs</button>
+                                <button onclick="setActive(this, 'microservice')" type="button" class="list-group-item list-group-item-action">Microservices</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-9 skill-logos-container">
-                    <img class="skill-logo" src="./media/Logos/Python-logo-notext.png">
-                    <img class="skill-logo" src="./media/Logos/JavaScript-logo.png">
-                    <img class="skill-logo" src="./media/Logos/CSS3.png">
-                    <img class="skill-logo" src="./media/Logos/html5.png">
-                    <img class="skill-logo" src="./media/Logos/Matlab_Logo.png">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3 ide-container">
-                    <h4>Frameworks</h4>
-                </div>
-                <div class="col-9 skill-logos-container">
-                    <img class="skill-logo" src="./media/Logos/Bootstrap_logo.png">
-                    <img class="skill-logo" src="./media/Logos/django.svg">
-                    <img class="skill-logo" src="./media/Logos/React-icon.png">
-                    <img class="skill-logo" src="./media/Logos/Nodejs.png">
                 </div>
             </div>
         </div>
+
     </div>
+    <br>
+    <div class="container" id="portfolio">
+        <h2 class="section-title" id="portfolio">Portfolio Projects</h2>
+
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="./media/Logos/Postgresql_elephant.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./media/Logos/liquid-logo-text.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        
+          
+    </div>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
 
     
 </body>

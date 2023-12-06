@@ -1,22 +1,32 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+function setActive(clickedButton, skillLogoType) {
+  // Get all buttons within the list group
+  var buttons = document.querySelectorAll('.skills-list .list-group-item');
+  
+  // Remove 'active' class and 'aria-current' attribute from all buttons
+  buttons.forEach(function(btn){
+      btn.classList.remove('active');
+      btn.removeAttribute('aria-current');
+  });
+
+  // Add 'active' class and 'aria-current' attribute to the clicked button
+  clickedButton.classList.add('active');
+  clickedButton.setAttribute('aria-current', 'true');
+
+  let skillLogos = document.querySelectorAll('.skill-logo')
+
+  skillLogos.forEach(logo => {
+    if(skillLogoType == 'skill-logo'){
+      logo.classList.remove('gray');
+      logo.classList.remove('filtered-skill');
+    } else if(logo.classList.contains(skillLogoType)){
+      logo.classList.remove('gray');
+      logo.classList.add('filtered-skill');
     } else {
-      x.className = "topnav";
+      logo.classList.add('gray');
+      logo.classList.remove('filtered-skill');
     }
-  }
-
-  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("myTopnav").style.top = "0";
-  } else {
-    document.getElementById("myTopnav").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
+  })
 }
-

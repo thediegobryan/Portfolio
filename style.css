@@ -41,7 +41,7 @@ h4{
     padding: 75px 20px;
 }
 
-.about-me-title{
+.section-title{
     font-size: 50px;
     padding-bottom: 15px;
 }
@@ -51,6 +51,17 @@ h4{
     text-align: justify;
 }
 /* ------------------Skills STYLING---------------- */
+.gray{
+    filter: grayscale(100%);
+}
+.filtered-skill{
+    scale: 1.25;
+}
 .skill-logo{
     height: 75px;
+    margin: 5px;
+    /* filter: grayscale(100%); */
+}
+.skill-logo:hover{
+    scale: 1.5;
 }
